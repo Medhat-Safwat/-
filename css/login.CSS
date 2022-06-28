@@ -1,0 +1,149 @@
+ :root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+   
+  }
+  .main-btn {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+  }
+  .main-btn:hover {
+    color: var(--yellow-color);
+  }
+  .main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  } 
+  /* Start Navbar */
+     .navbar {
+    background-color: var(--dark-color);
+  }
+  .navbar .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+  }
+  .navbar .search {
+    border-left: 1px solid var(--green-color);
+  }
+  .navbar .search svg {
+    color: var(--green-color);
+  }
+  .navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+  } 
+  /* End Navbar */
+
+    
+  /* Start Landing */
+ .landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+  }
+  /* End Landing */
+ 
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../img/غلاف.jpeg);
+    background-size: cover;
+
+  }
+  /* Start box */
+ 
+  .box{
+    width: 305px;
+    padding: 43px;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+   /* End box */
+   
+  /* Start est */
+ .est {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   position: absolute;
+   top: -26px;
+   left: 53px;
+   padding: 5px;
+   text-align:center;
+ }
+  /* End est */
+
+   /* Start h1 */
+  .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+   /* End h1 */
+
+    /* Start input */
+  .box input[type = "text"],.box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+  }
+  .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+  }
+  .box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  .box input[type = "submit"]:hover{
+    background: #2ecc71;
+  }
+   /* End input */
